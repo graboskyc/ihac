@@ -1,0 +1,26 @@
+[
+    {
+        "sku":"abc",
+        "name":"Thermostat",
+        "region":"en-us",
+        "decription":"foo bar baz",
+        "price":100,
+        "categories":["acessories"]
+    },
+    {
+        "sku":"def",
+        "name":"Big Heater",
+        "region":"en-us",
+        "decription":"foo bar baz",
+        "price":10000,
+        "categories":["hvac"]
+    },
+    {
+        "sku":"hijj",
+        "name":"Little Heater",
+        "region":"en-us",
+        "decription":"foo bar baz",
+        "price":5000,
+        "categories":["hvac"]
+    }
+]

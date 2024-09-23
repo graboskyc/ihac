@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
 
     </head>
     <body data-theme="light">
-        <div data-theme="light" class="container">
+        <div x-data="init()" x-init="loadList" data-theme="light" class="container">
             <nav data-theme="dark">
                 <ul>
                     <li><img height="32" src="/img/icon.png" style="height: 32px !important;" /></li>
@@ -30,11 +30,24 @@
                 </ul>
             </nav>
 
-            <article class="container-fluid" data-theme="light">
-                <h1>IHAC</h1>
-                <p><s>I Have a Customer</s></p>
-                <p>International Heating and Cooling Technolgies</p>
-                <p>Coming Soon</p>
+            <article class="mainCtr">
+                <h1>Products</h1>
+                <input
+                    type="search"
+                    name="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    />
+
+                <div :aria-busy="listOfProducts.length === 0 ? 'true':'false'">
+                    <template x-for="p in listOfProducts">
+                        <article class="productCard">
+                            <header x-text="p.name"></header>
+                            <p x-text="p.decription"></p>
+                            <footer x-text="p.price"></footer>
+                        </article>
+                    </template>
+                </div>
             </article>
 
         </div>

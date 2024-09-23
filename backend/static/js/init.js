@@ -4,7 +4,7 @@ function init() {
 
         async loadList() {
             console.log('Loading List');
-            //this.listOfArticles= await (await fetch('/api/listAll')).json();
+            this.listOfProducts= await (await fetch('/api/listProducts')).json();
         },
 
         delay(ms) {
