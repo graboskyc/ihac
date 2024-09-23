@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Response
-
+from fastapi.staticfiles import StaticFiles
 
 api_app = FastAPI(title="api-app")
 app = FastAPI(title="spa-app")
