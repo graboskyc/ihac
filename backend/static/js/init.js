@@ -4,9 +4,10 @@ function init() {
         searchTerm:"",
         isLoading:false,
 
-        async loadList() {
-            this.isLoading = true;
+        async loadList() {            
             console.log('Loading List');
+            this.isLoading = true;
+            this.searchTerm = "";
             this.listOfProducts = [];
             this.listOfProducts= await (await fetch('/api/listProducts')).json();
             this.isLoading = false;

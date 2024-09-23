@@ -47,7 +47,8 @@
 
                 <div style="width: 100%; height: 100%;">
                     <div x-show="isLoading">
-                        <h2>Searching our inventory...</h2>
+                        <h2 x-show="searchTerm.length === 0">Loading our inventory...</h2>
+                        <h2 x-show="searchTerm.length > 0">Searching our inventory...</h2>
                         <progress />
                     </div>
 
