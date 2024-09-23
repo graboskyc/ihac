@@ -16,7 +16,7 @@ async def hello():
  
 @api_app.get("/listProducts")
 async def listProducts():
-    time.sleep(random.randint(5,17))
+    time.sleep(random.randint(2,5))
     with open('./database/products.json') as f:
         d = json.load(f)
         return d
