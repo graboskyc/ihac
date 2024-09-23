@@ -3,24 +3,36 @@
         "sku":"abc",
         "name":"Thermostat",
         "region":"en-us",
-        "decription":"foo bar baz",
+        "description":"foo bar baz",
         "price":100,
-        "categories":["acessories"]
+        "categories":["acessories"],
+        "pic":"10.jpg"
     },
     {
         "sku":"def",
         "name":"Big Heater",
         "region":"en-us",
-        "decription":"foo bar baz",
+        "description":"foo bar baz",
         "price":10000,
-        "categories":["hvac"]
+        "categories":["hvac"],
+        "pic":"01.jpg"
     },
     {
         "sku":"hijj",
         "name":"Little Heater",
         "region":"en-us",
-        "decription":"foo bar baz",
+        "description":"foo bar baz",
         "price":5000,
-        "categories":["hvac"]
+        "categories":["hvac"],
+        "pic":"02.jpg"
+    },
+    {
+        "sku":"klmn",
+        "name":"Plubing parts",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":10,
+        "categories":["accessories"],
+        "pic":"05.jpg"
     }
 ]

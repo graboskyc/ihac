@@ -20,37 +20,46 @@
 
     </head>
     <body data-theme="light">
-        <div x-data="init()" x-init="loadList" data-theme="light" class="container">
+        <form x-data="init()" x-init="loadList" data-theme="light" class="container" @submit.prevent="searchThoseProducts">
             <nav data-theme="dark">
                 <ul>
                     <li><img height="32" src="/img/icon.png" style="height: 32px !important;" /></li>
                 </ul>
                 <ul>
-                    <li><a href="products.html">Product Catalog</a></li>
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
 
             <article class="mainCtr">
                 <h1>Products</h1>
-                <input
-                    type="search"
-                    name="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                    />
+                <fieldset role="group">
+                    <input
+                        type="search"
+                        name="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                        x-model="searchTerm"
+                        />
+                    <input type="submit" value="Search" />
+                </fieldset>
 
-                <div :aria-busy="listOfProducts.length === 0 ? 'true':'false'">
+                <div :aria-busy="listOfProducts === null ? 'true':'false'" style="width: 100%; height: 100%;">
                     <template x-for="p in listOfProducts">
-                        <article class="productCard">
+                        <article class="productCard" data-theme="dark">
                             <header x-text="p.name"></header>
+                            <img :src="`/img/products/${p.pic}`"  />
                             <p x-text="p.decription"></p>
                             <footer x-text="p.price"></footer>
                         </article>
                     </template>
+                    <article x-show="listOfProducts.length === 0" class="productCard" data-theme="dark">
+                        No products found
+                    </article>
+                    <div style="clear:both;">&nbsp;</div>
                 </div>
             </article>
 
-        </div>
+        </form>
 
     </body>
 </html>

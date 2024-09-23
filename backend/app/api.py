@@ -2,6 +2,7 @@ from fastapi import FastAPI, Response
 from fastapi.staticfiles import StaticFiles
 import json
 import time
+import random
 
 api_app = FastAPI(title="api-app")
 app = FastAPI(title="spa-app")
@@ -15,8 +16,18 @@ async def hello():
  
 @api_app.get("/listProducts")
 async def listProducts():
-    time.sleep(5)
+    time.sleep(random.randint(5,17))
     with open('./database/products.json') as f:
         d = json.load(f)
         return d
  
+@api_app.get("/searchProducts/{searchString}")
+async def searchProducts(searchString:str):
+    time.sleep(random.randint(5,7))
+    with open('./database/products.json') as f:
+        d = json.load(f)
+        searched = []
+        for p in d:
+            if ((searchString.lower() in p["name"].lower()) or (searchString.lower() in p["description"].lower())):
+                searched.append(p)
+        return searched

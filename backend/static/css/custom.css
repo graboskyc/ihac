@@ -1,4 +1,9 @@
 .productCard {
-    float:left;
-    margin:10px;
+    float: left;
+    margin: .5rem;
+    width: 16rem;
+}
+
+.mainCtr { 
+    min-height: 90vh;
 }
