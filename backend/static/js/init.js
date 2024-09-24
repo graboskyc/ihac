@@ -33,7 +33,8 @@ function init() {
             }
         },
 
-        async addProductToCart(p) {
+        async addProductToCart(p, ctr) {
+            this.changeBack(ctr, "$"+p.price);
             this.cart.push(p);
             localStorage.setItem('cart', JSON.stringify(this.cart));
         },
@@ -54,6 +55,13 @@ function init() {
         delay(ms) {
             return new Promise(resolve => setTimeout(resolve, ms))
         },
+
+        async changeBack(ctr, currentText) {
+            ctr.innerHTML = "Added to Cart";
+            this.delay(1500).then(() => {           
+                ctr.innerHTML = currentText;
+            });
+        }
 
     }
 }

@@ -65,7 +65,7 @@
                             <img :src="`/img/products/${p.pic}`"  />
                             <p x-text="p.decription"></p>
                             <footer style="text-align: center;">
-                                <button x-text="'$' + p.price" x-on:click="addProductToCart(p)"></button>
+                                <button x-text="'$' + p.price" x-on:click="addProductToCart(p, $event.target)"></button>
                             </footer>
                         </article>
                     </template>
