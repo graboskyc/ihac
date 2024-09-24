@@ -52,3 +52,8 @@ async def listFacets():
                 if cat not in facets:
                     facets.append(cat)
         return facets
+
+@api_app.get("/checkout")
+async def checkout():
+    time.sleep(random.randint(9,17))
+    return True

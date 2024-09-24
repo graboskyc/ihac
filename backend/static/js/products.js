@@ -8,6 +8,8 @@ function init() {
         showCart:false,
         oldSearchTerm:"",
         selectedFacets: [],
+        inCheckout: false,
+        checkoutForm:false,
 
         async loadAll() {
             this.loadList();
@@ -45,7 +47,6 @@ function init() {
                 body: JSON.stringify({searchTerm: this.searchTerm, facets: this.selectedFacets})
             })).json();
             this.isLoading = false;
-
         },
 
         async addProductToCart(p, ctr) {
@@ -56,10 +57,19 @@ function init() {
 
         async viewCart() {
             this.showCart = true;
+            this.inCheckout = false;
+            this.checkoutForm = false;
         },
 
         async closeCart() {
             this.showCart = false;
+            this.inCheckout = false;
+            this.checkoutForm = false
+        },
+
+        async openCheckout() {            
+            this.inCheckout = true;
+            this.checkoutForm= await (await fetch('/api/checkout')).json();
         },
 
         async delFromCart(p) {

@@ -96,7 +96,7 @@
                         Cart
                         <button aria-label="Close" rel="prev" x-on:click="closeCart"></button>
                     </header>
-                    <table>
+                    <table x-show="!inCheckout">
                         <thead>
                             <tr>
                                 <th>Product</th>
@@ -120,6 +120,15 @@
                                 <td colspan="3" style="text-align: center;">No products in cart</td>
                         </tbody>
                     </table>
+                    <button x-show="!inCheckout" x-on:click="openCheckout()" style="float: right;">Checkout</button>
+                    <div x-show="inCheckout && !checkoutForm">
+                        <h1>Loading checkout...</h1>
+                        <progress></progress>
+                    </div>
+                    <div x-show="inCheckout && checkoutForm">
+                        <h1>Loading checkout has failed</h1>
+                        <p>:(</p>
+                    </div>
                 </article>
             </dialog>
 
