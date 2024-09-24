@@ -39,3 +39,12 @@
 .card-img-top {
     height:200px;
 }
+
+.btn-delete {
+    background-color: var(--pico-del-color);
+    border-color: var(--pico-form-element-invalid-active);
+}
+
+.btn-delete:hover {
+    background-color: var(--pico-form-element-invalid-active-border-color);
+}

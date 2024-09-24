@@ -46,6 +46,11 @@ function init() {
             this.showCart = false;
         },
 
+        async delFromCart(p) {
+            this.cart = this.cart.filter((c) => c != p);
+            localStorage.setItem('cart', JSON.stringify(this.cart));
+        },
+
         delay(ms) {
             return new Promise(resolve => setTimeout(resolve, ms))
         },

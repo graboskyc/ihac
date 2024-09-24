@@ -84,11 +84,30 @@
                         Cart
                         <button aria-label="Close" rel="prev" x-on:click="closeCart"></button>
                     </header>
-                    <ul>
-                        <template x-for="p in cart">
-                            <li x-text="p.name"></li>
-                        </template>
-                    </ul>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="p in cart">
+                                <tr>
+                                    <td x-text="p.name"></td>
+                                    <td x-text="'$' + p.price"></td>
+                                    <td>
+                                        <button class="btn-delete" x-on:click="delFromCart(p)">
+                                            <span class="material-symbols-outlined">delete</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </template>
+                            <tr x-show="cart.length === 0">
+                                <td colspan="3" style="text-align: center;">No products in cart</td>
+                        </tbody>
+                    </table>
                 </article>
             </dialog>
 
