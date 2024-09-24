@@ -1,11 +1,18 @@
 function init() {
     return {
         listOfProducts: null,
+        listOfFacets: null,
         searchTerm:"",
         isLoading:false,
         cart:[],
         showCart:false,
         oldSearchTerm:"",
+        selectedFacets: [],
+
+        async loadAll() {
+            this.loadList();
+            this.loadFacets();
+        },
 
         async loadList() {            
             console.log('Loading List');
@@ -19,18 +26,26 @@ function init() {
             this.isLoading = false;
         },
 
+        async loadFacets() {            
+            console.log('Loading Facets');
+            this.listOfFacets = [];
+            this.listOfFacets= await (await fetch('/api/listFacets')).json();
+            this.selectedFacets = this.listOfFacets;
+        },
+
         async searchThoseProducts() {
-            if(this.searchTerm != "") {
-                if(this.oldSearchTerm != this.searchTerm) {
-                    this.oldSearchTerm = this.searchTerm;
-                    
-                    this.isLoading = true;
-                    console.log(this.searchTerm);
-                    this.listOfProducts = [];
-                    this.listOfProducts= await (await fetch('/api/searchProducts/'+this.searchTerm)).json();
-                    this.isLoading = false;
-                }
-            }
+            this.isLoading = true;
+            console.log(this.searchTerm);
+            this.listOfProducts = [];
+            this.listOfProducts=  await(await fetch('/api/searchProducts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({searchTerm: this.searchTerm, facets: this.selectedFacets})
+            })).json();
+            this.isLoading = false;
+
         },
 
         async addProductToCart(p, ctr) {

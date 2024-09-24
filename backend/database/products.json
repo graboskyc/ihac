@@ -5,7 +5,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":100,
-        "categories":["acessories"],
+        "categories":["accessories","controls"],
         "pic":"10.jpg"
     },
     {
@@ -14,7 +14,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":80,
-        "categories":["acessories"],
+        "categories":["accessories","controls"],
         "pic":"07.jpg"
     },
     {
@@ -23,7 +23,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":150,
-        "categories":["acessories"],
+        "categories":["accessories","controls"],
         "pic":"08.jpg"
     },
     {
@@ -32,7 +32,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":80,
-        "categories":["acessories"],
+        "categories":["accessories","controls"],
         "pic":"09.jpg"
     },
     {
@@ -77,7 +77,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":10,
-        "categories":["accessories"],
+        "categories":["accessories", "plumbing"],
         "pic":"05.jpg"
     },
     {
@@ -86,7 +86,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":10,
-        "categories":["accessories"],
+        "categories":["accessories", "plumbing"],
         "pic":"06.jpg"
     },
     {
@@ -95,7 +95,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":60,
-        "categories":["accessories"],
+        "categories":["accessories", "machinery"],
         "pic":"11.jpg"
     },
     {
@@ -104,7 +104,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":125,
-        "categories":["accessories"],
+        "categories":["accessories", "machinery"],
         "pic":"13.jpg"
     },
     {
@@ -113,7 +113,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":925,
-        "categories":["accessories"],
+        "categories":["accessories", "electrical"],
         "pic":"14.jpg"
     }
 ]
