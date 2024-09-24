@@ -63,7 +63,9 @@
                             <header x-text="p.name"></header>
                             <img :src="`/img/products/${p.pic}`"  />
                             <p x-text="p.decription"></p>
-                            <footer x-text="p.price"></footer>
+                            <footer style="text-align: center;">
+                                <button x-text="'$' + p.price"></button>
+                            </footer>
                         </article>
                     </template>
 

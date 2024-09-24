@@ -1,7 +1,7 @@
 [
     {
-        "sku":"abc",
-        "name":"Thermostat",
+        "sku":"IH91234",
+        "name":"Fancy Thermostat",
         "region":"en-us",
         "description":"foo bar baz",
         "price":100,
@@ -9,7 +9,34 @@
         "pic":"10.jpg"
     },
     {
-        "sku":"def",
+        "sku":"IH96666",
+        "name":"Basic Thermostat",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":80,
+        "categories":["acessories"],
+        "pic":"07.jpg"
+    },
+    {
+        "sku":"IH765422",
+        "name":"Environmental Control Unit",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":150,
+        "categories":["acessories"],
+        "pic":"08.jpg"
+    },
+    {
+        "sku":"IH47962",
+        "name":"Round Thermostat",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":80,
+        "categories":["acessories"],
+        "pic":"09.jpg"
+    },
+    {
+        "sku":"IH92235",
         "name":"Big Heater",
         "region":"en-us",
         "description":"foo bar baz",
@@ -18,7 +45,7 @@
         "pic":"01.jpg"
     },
     {
-        "sku":"hijj",
+        "sku":"IH84239",
         "name":"Little Heater",
         "region":"en-us",
         "description":"foo bar baz",
@@ -27,12 +54,66 @@
         "pic":"02.jpg"
     },
     {
-        "sku":"klmn",
-        "name":"Plubing parts",
+        "sku":"IH75621",
+        "name":"Medium Furnace",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":7500,
+        "categories":["hvac"],
+        "pic":"03.jpg"
+    },
+    {
+        "sku":"IH64237",
+        "name":"Haunted Air Conditioner",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":3500,
+        "categories":["hvac"],
+        "pic":"04.jpg"
+    },
+    {
+        "sku":"IH756943",
+        "name":"Furnace plumbing parts",
         "region":"en-us",
         "description":"foo bar baz",
         "price":10,
         "categories":["accessories"],
         "pic":"05.jpg"
+    },
+    {
+        "sku":"IH54239",
+        "name":"Air conditioner plumbing parts",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":10,
+        "categories":["accessories"],
+        "pic":"06.jpg"
+    },
+    {
+        "sku":"IH24567",
+        "name":"Fan control parts",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":60,
+        "categories":["accessories"],
+        "pic":"11.jpg"
+    },
+    {
+        "sku":"IH43624",
+        "name":"Industrial motor",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":125,
+        "categories":["accessories"],
+        "pic":"13.jpg"
+    },
+    {
+        "sku":"IH02144",
+        "name":"Electrical control board",
+        "region":"en-us",
+        "description":"foo bar baz",
+        "price":925,
+        "categories":["accessories"],
+        "pic":"14.jpg"
     }
 ]
