@@ -17,14 +17,14 @@ async def hello():
  
 @api_app.get("/listProducts")
 async def listProducts():
-    #time.sleep(random.randint(2,5))
+    time.sleep(random.randint(2,5))
     with open('./database/products.json') as f:
         d = json.load(f)
         return d
 
 @api_app.post("/searchProducts")
 async def searchProducts(s : Dict[Any, Any]):
-    #time.sleep(random.randint(5,9))
+    time.sleep(random.randint(5,9))
     with open('./database/products.json') as f:
         d = json.load(f)
         faceted = []
@@ -43,7 +43,7 @@ async def searchProducts(s : Dict[Any, Any]):
 
 @api_app.get("/listFacets")
 async def listFacets():
-    #time.sleep(random.randint(5,7))
+    time.sleep(random.randint(5,7))
     facets = []
     with open('./database/products.json') as f:
         d = json.load(f)
