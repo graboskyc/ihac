@@ -3,6 +3,9 @@ function init() {
         listOfProducts: null,
         searchTerm:"",
         isLoading:false,
+        cart:[],
+        showCart:false,
+        oldSearchTerm:"",
 
         async loadList() {            
             console.log('Loading List');
@@ -14,11 +17,29 @@ function init() {
         },
 
         async searchThoseProducts() {
-            this.isLoading = true;
-            console.log(this.searchTerm);
-            this.listOfProducts = [];
-            this.listOfProducts= await (await fetch('/api/searchProducts/'+this.searchTerm)).json();
-            this.isLoading = false;
+            if(this.searchTerm != "") {
+                if(this.oldSearchTerm != this.searchTerm) {
+                    this.oldSearchTerm = this.searchTerm;
+                    
+                    this.isLoading = true;
+                    console.log(this.searchTerm);
+                    this.listOfProducts = [];
+                    this.listOfProducts= await (await fetch('/api/searchProducts/'+this.searchTerm)).json();
+                    this.isLoading = false;
+                }
+            }
+        },
+
+        async addProductToCart(p) {
+            this.cart.push(p);
+        },
+
+        async viewCart() {
+            this.showCart = true;
+        },
+
+        async closeCart() {
+            this.showCart = false;
         },
 
         delay(ms) {

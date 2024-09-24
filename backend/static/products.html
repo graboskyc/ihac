@@ -30,6 +30,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="products.html">Product Catalog</a></li>
+                    <li><button x-on:click="viewCart" x-text="'Cart ('+cart.length+')'"></button></li>
                 </ul>
             </nav>
 
@@ -64,7 +65,7 @@
                             <img :src="`/img/products/${p.pic}`"  />
                             <p x-text="p.decription"></p>
                             <footer style="text-align: center;">
-                                <button x-text="'$' + p.price"></button>
+                                <button x-text="'$' + p.price" x-on:click="addProductToCart(p)"></button>
                             </footer>
                         </article>
                     </template>
@@ -76,6 +77,20 @@
                     <div style="clear:both;">&nbsp;</div>
                 </div>
             </article>
+
+            <dialog x-show="showCart" open x-transition.duration.500ms x-transition.opacity>
+                <article>
+                    <header>
+                        Cart
+                        <button aria-label="Close" rel="prev" x-on:click="closeCart"></button>
+                    </header>
+                    <ul>
+                        <template x-for="p in cart">
+                            <li x-text="p.name"></li>
+                        </template>
+                    </ul>
+                </article>
+            </dialog>
 
         </form>
 
