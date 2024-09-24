@@ -16,6 +16,7 @@
         <link rel="manifest" href="/img/site.webmanifest">
 
         <script src="/js/init.js"></script>
+        <script src="/js/components.js"></script>
         <link rel="stylesheet" href="/css/custom.css" />
 
     </head>
@@ -49,7 +50,12 @@
                     <div x-show="isLoading">
                         <h2 x-show="searchTerm.length === 0">Loading our inventory...</h2>
                         <h2 x-show="searchTerm.length > 0">Searching our inventory...</h2>
-                        <progress />
+                        <progress></progress>
+
+                        <skeleton-card></skeleton-card>
+                        <skeleton-card></skeleton-card>
+                        <skeleton-card></skeleton-card>
+
                     </div>
 
                     <template x-for="p in listOfProducts">
