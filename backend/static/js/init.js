@@ -12,6 +12,9 @@ function init() {
             this.isLoading = true;
             this.searchTerm = "";
             this.listOfProducts = [];
+            if(localStorage.getItem('cart') != null) {
+                this.cart = JSON.parse(localStorage.getItem('cart'));
+            }
             this.listOfProducts= await (await fetch('/api/listProducts')).json();
             this.isLoading = false;
         },
@@ -32,6 +35,7 @@ function init() {
 
         async addProductToCart(p) {
             this.cart.push(p);
+            localStorage.setItem('cart', JSON.stringify(this.cart));
         },
 
         async viewCart() {
