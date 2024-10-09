@@ -9,6 +9,8 @@ function init() {
         oldSearchTerm:"",
         selectedFacets: [],
         inCheckout: false,
+        inDescription:false,
+        selectedItem:{},
         checkoutForm:false,
 
         async loadAll() {
@@ -59,12 +61,22 @@ function init() {
             this.showCart = true;
             this.inCheckout = false;
             this.checkoutForm = false;
+            this.inDescription = false;
         },
 
-        async closeCart() {
+        async viewDescription(item) {
+            this.selectedItem = item;
             this.showCart = false;
             this.inCheckout = false;
-            this.checkoutForm = false
+            this.checkoutForm = false;
+            this.inDescription = true;
+        },
+
+        async closeDialogs() {
+            this.showCart = false;
+            this.inCheckout = false;
+            this.checkoutForm = false;            
+            this.inDescription = false;
         },
 
         async openCheckout() {            

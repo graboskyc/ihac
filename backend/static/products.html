@@ -77,7 +77,8 @@
                             <img :src="`/img/products/${p.pic}`"  />
                             <p x-text="p.decription"></p>
                             <footer style="text-align: center;">
-                                <button x-text="'$' + p.price" x-on:click="addProductToCart(p, $event.target)"></button>
+                                <button x-on:click="viewDescription(p)" style="width:100%" class="secondary">Product Details</button>
+                                <button x-text="'$' + p.price" x-on:click="addProductToCart(p, $event.target)" style="width:100%"></button>
                             </footer>
                         </article>
                     </template>
@@ -94,7 +95,7 @@
                 <article>
                     <header>
                         Cart
-                        <button aria-label="Close" rel="prev" x-on:click="closeCart"></button>
+                        <button aria-label="Close" rel="prev" x-on:click="closeDialogs"></button>
                     </header>
                     <table x-show="!inCheckout">
                         <thead>
@@ -120,7 +121,7 @@
                                 <td colspan="3" style="text-align: center;">No products in cart</td>
                         </tbody>
                     </table>
-                    <button x-show="!inCheckout" x-on:click="openCheckout()" style="float: right;">Checkout</button>
+                    <button x-show="!inCheckout && cart.length > 0" x-on:click="openCheckout()" style="float: right;">Checkout</button>
                     <div x-show="inCheckout && !checkoutForm">
                         <h1>Loading checkout...</h1>
                         <progress></progress>
@@ -128,6 +129,34 @@
                     <div x-show="inCheckout && checkoutForm">
                         <h1>Loading checkout has failed</h1>
                         <p>:(</p>
+                    </div>
+                </article>
+            </dialog>
+
+
+            <dialog x-show="inDescription" open x-transition.duration.500ms x-transition.opacity>
+                <article>
+                    <header>
+                        Product Details
+                        <button aria-label="Close" rel="prev" x-on:click="closeDialogs"></button>
+                    </header>
+                    
+                    <div class="grid">
+                        <img :src="`/img/products/${selectedItem.pic}`" height="512" width="512"  />
+                        <table>
+                            <tr>
+                                <th x-text="selectedItem.name"></th>
+                            </tr>
+                            <tr>
+                                <td x-text="selectedItem.description"></td>
+                            </tr>
+                            <tr>
+                                <td x-text="'$' + selectedItem.price"></td>
+                            </tr>
+                            <tr>
+                                <td><button x-on:click="addProductToCart(selectedItem, $event.target)" style="width:100%">Add to Cart</button></td>
+                            </tr>
+                        </table>
                     </div>
                 </article>
             </dialog>
