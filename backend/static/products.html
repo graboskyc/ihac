@@ -48,15 +48,31 @@
                             />
                         <button x-on:click="searchThoseProducts">Search</button>
                     </fieldset>
-                    <div class="grid" style="margin-bottom: 1rem;">
-                        <template x-for="f in listOfFacets">
-                            <div>
-                                <span x-text="f"></span>                            
-                                <input x-model="selectedFacets" type="checkbox" :value="f" />
-                                <br />
-                            </div>
-                        </template>
-                    </div>                    
+
+                    <div x-show="listOfFacets.length > 0">
+                        <h3>Facets</h3>
+                        <div class="grid" style="margin-bottom: 1rem;">
+                            <template x-for="f in listOfFacets">
+                                <div x-show="!regionsList.includes(f)">
+                                    <span x-text="f"></span>                            
+                                    <input x-model="selectedFacets" type="checkbox" :value="f" />
+                                    <br />
+                                </div>
+                            </template>
+                        </div>
+
+                        <h3>Regions</h3>
+                        <div class="grid" style="margin-bottom: 1rem;">
+                            <template x-for="f in regionsList">
+                                <div>
+                                    <span x-text="f"></span>                            
+                                    <input x-model="selectedFacets" type="checkbox" :value="f" />
+                                    <br />
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+
                     <progress x-show="listOfFacets.length === 0"></progress>
                 </div>
 

@@ -30,8 +30,9 @@ async def searchProducts(s : Dict[Any, Any]):
         faceted = []
         searched = []
         for p in d:
-            intersection = set(p["categories"]) & set(s["facets"])
-            if(len(intersection) > 0):
+            catIntersection = set(p["categories"]) & set(s["facets"])
+            regIntersection = set(p["region"]) & set(s["facets"])
+            if((len(catIntersection) > 0) and (len(regIntersection) > 0)):
                 faceted.append(p)
         for p in faceted:
             if(len(s["searchTerm"]) > 0):

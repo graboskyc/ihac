@@ -6,7 +6,7 @@
         "price": 499.99,
         "brand": "CoolTech",
         "categories": ["hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng002",
@@ -15,7 +15,7 @@
         "price": 299.99,
         "brand": "HeatMaster",
         "categories": ["hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng003",
@@ -24,7 +24,7 @@
         "price": 199.99,
         "brand": "PureBreeze",
         "categories": ["purifiers"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng004",
@@ -33,7 +33,7 @@
         "price": 79.99,
         "brand": "EcoCool",
         "categories": ["fan"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng005",
@@ -42,7 +42,7 @@
         "price": 399.99,
         "brand": "WarmWave",
         "categories": ["hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng006",
@@ -51,7 +51,7 @@
         "price": 129.99,
         "brand": "FreshFlow",
         "categories": ["humidity"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng007",
@@ -60,7 +60,7 @@
         "price": 249.99,
         "brand": "DryEase",
         "categories": ["humidity"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng008",
@@ -69,7 +69,7 @@
         "price": 599.99,
         "brand": "AirFlow",
         "categories": ["fan"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng009",
@@ -78,7 +78,7 @@
         "price": 149.99,
         "brand": "CoolBreeze",
         "categories": ["fan"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng010",
@@ -87,7 +87,7 @@
         "price": 179.99,
         "brand": "HeatWave",
         "categories": ["infrared","hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng011",
@@ -96,7 +96,7 @@
         "price": 229.99,
         "brand": "PureAir",
         "categories": ["purifiers"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng012",
@@ -105,7 +105,7 @@
         "price": 89.99,
         "brand": "EcoHeat",
         "categories": ["ceramic","hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng013",
@@ -114,7 +114,7 @@
         "price": 349.99,
         "brand": "CoolWave",
         "categories": ["portable","hvac","hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng014",
@@ -123,7 +123,7 @@
         "price": 99.99,
         "brand": "FreshAir",
         "categories": ["fan"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng015",
@@ -132,7 +132,7 @@
         "price": 199.99,
         "brand": "WarmBreeze",
         "categories": ["hvac","oil"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng016",
@@ -141,7 +141,7 @@
         "price": 49.99,
         "brand": "AirPure",
         "categories": ["filter"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng017",
@@ -150,7 +150,7 @@
         "price": 299.99,
         "brand": "CoolAir",
         "categories": ["hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng018",
@@ -159,7 +159,7 @@
         "price": 149.99,
         "brand": "HeatGuard",
         "categories": ["hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng019",
@@ -168,7 +168,7 @@
         "price": 89.99,
         "brand": "PureFlow",
         "categories": ["fan"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng020",
@@ -177,7 +177,7 @@
         "price": 199.99,
         "brand": "EcoDry",
         "categories": ["humidity"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng021",
@@ -186,7 +186,7 @@
         "price": 79.99,
         "brand": "CoolWave",
         "categories": ["fan"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng022",
@@ -195,7 +195,7 @@
         "price": 99.99,
         "brand": "WarmAir",
         "categories": ["ceramic","hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng023",
@@ -204,7 +204,7 @@
         "price": 229.99,
         "brand": "PureBreeze",
         "categories": ["purifiers"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng024",
@@ -213,7 +213,7 @@
         "price": 49.99,
         "brand": "EcoCool",
         "categories": ["fan","portable"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "iheng025",
@@ -222,7 +222,7 @@
         "price": 179.99,
         "brand": "HeatMaster",
         "categories": ["infrared","hvac"],
-        "region":"en-us"
+        "region":["en-us"]
     },
     {
         "sku": "ihkor001",
@@ -231,7 +231,7 @@
         "price": 499.99,
         "brand": "CoolTech",
         "categories": ["hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor002",
@@ -240,7 +240,7 @@
         "price": 299.99,
         "brand": "HeatMaster",
         "categories": ["hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor003",
@@ -249,7 +249,7 @@
         "price": 199.99,
         "brand": "PureBreeze",
         "categories": ["purifiers"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor004",
@@ -258,7 +258,7 @@
         "price": 79.99,
         "brand": "EcoCool",
         "categories": ["fan"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor005",
@@ -267,7 +267,7 @@
         "price": 399.99,
         "brand": "WarmWave",
         "categories": ["hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor006",
@@ -276,7 +276,7 @@
         "price": 129.99,
         "brand": "FreshFlow",
         "categories": ["humidity"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor007",
@@ -285,7 +285,7 @@
         "price": 249.99,
         "brand": "DryEase",
         "categories": ["humidity"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor008",
@@ -295,7 +295,7 @@
         "price_krw": 808571.52,
         "brand": "AirFlow",
         "categories": ["fan"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor009",
@@ -304,7 +304,7 @@
         "price": 149.99,
         "brand": "CoolBreeze",
         "categories": ["fan"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor010",
@@ -313,7 +313,7 @@
         "price": 179.99,
         "brand": "HeatWave",
         "categories": ["infrared","hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor011",
@@ -322,7 +322,7 @@
         "price": 229.99,
         "brand": "PureAir",
         "categories": ["purifiers"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor012",
@@ -331,7 +331,7 @@
         "price": 89.99,
         "brand": "EcoHeat",
         "categories": ["ceramic","hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor013",
@@ -340,7 +340,7 @@
         "price": 349.99,
         "brand": "CoolWave",
         "categories": ["portable","hvac","hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor014",
@@ -349,7 +349,7 @@
         "price": 99.99,
         "brand": "FreshAir",
         "categories": ["fan"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor015",
@@ -358,7 +358,7 @@
         "price": 199.99,
         "brand": "WarmBreeze",
         "categories": ["hvac","oil"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor016",
@@ -367,7 +367,7 @@
         "price": 49.99,
         "brand": "AirPure",
         "categories": ["filter"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor017",
@@ -376,7 +376,7 @@
         "price": 299.99,
         "brand": "CoolAir",
         "categories": ["hvac","hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor018",
@@ -385,7 +385,7 @@
         "price": 149.99,
         "brand": "HeatGuard",
         "categories": ["hvac","hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor019",
@@ -394,7 +394,7 @@
         "price": 89.99,
         "brand": "PureFlow",
         "categories": ["fan"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor020",
@@ -403,7 +403,7 @@
         "price": 199.99,
         "brand": "EcoDry",
         "categories": ["humidity"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor021",
@@ -412,7 +412,7 @@
         "price": 79.99,
         "brand": "CoolWave",
         "categories": ["fan"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor022",
@@ -421,7 +421,7 @@
         "price": 99.99,
         "brand": "WarmAir",
         "categories": ["ceramic","hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor023",
@@ -430,7 +430,7 @@
         "price": 229.99,
         "brand": "PureBreeze",
         "categories": ["purifiers"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor024",
@@ -439,7 +439,7 @@
         "price": 49.99,
         "brand": "EcoCool",
         "categories": ["fan","portable"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku": "ihkor025",
@@ -448,12 +448,12 @@
         "price": 179.99,
         "brand": "HeatMaster",
         "categories": ["infrared","hvac"],
-        "region":"ko-kr"
+        "region":["ko-kr"]
     },
     {
         "sku":"IH91234",
         "name":"Fancy Thermostat",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Our highest-end smart thermostat complete with Wi-Fi, Bluetooth, MQTT, LoRA, and 19 other protocols that make it a target for hackers and the NSA.",
         "price":100,
         "categories":["controls"]
@@ -461,7 +461,7 @@
     {
         "sku":"IH96666",
         "name":"Basic Thermostat",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Digital control thermostat with timers and a few other features that make it a good choice for the average homeowner.",
         "price":80,
         "categories":["controls"]
@@ -469,7 +469,7 @@
     {
         "sku":"IH765422",
         "name":"Environmental Control Unit",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Thermostat and control unit for large scale commercial buildings. Can support up to 1000 zones and 10,000 sensors.",
         "price":150,
         "categories":["controls"]
@@ -477,7 +477,7 @@
     {
         "sku":"IH47962",
         "name":"Round Thermostat",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Its a thermostat. But round. And it has a dial. And it's round.",
         "price":80,
         "categories":["controls"]
@@ -485,7 +485,7 @@
     {
         "sku":"IH92235",
         "name":"Big Heater",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Forced air HVAC unit for large spaces. It has all the BTUs and all the power.",
         "price":10000,
         "categories":["hvac"]
@@ -493,7 +493,7 @@
     {
         "sku":"IH84239",
         "name":"Little Heater",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Forced air HVAC unit for smaller homes.",
         "price":5000,
         "categories":["hvac"]
@@ -501,7 +501,7 @@
     {
         "sku":"IH75621",
         "name":"Medium Furnace",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"The Goldilocks of HVAC units. Not too big, not too small, just right. Forced air furnace for medium sized homes.",
         "price":7500,
         "categories":["hvac"]
@@ -509,7 +509,7 @@
     {
         "sku":"IH64237",
         "name":"Haunted Air Conditioner",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"This one is on discount because it's haunted. It's always cold, but it's always cold. And it's always cold.",
         "price":3500,
         "categories":["hvac"]
@@ -517,7 +517,7 @@
     {
         "sku":"IH756943",
         "name":"Furnace plumbing parts",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Assorted plumbing fittings and fixtures required for furnace installation.",
         "price":10,
         "categories":[ "plumbing"]
@@ -525,7 +525,7 @@
     {
         "sku":"IH54239",
         "name":"Air conditioner plumbing parts",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Assorted plumbing fittings and fixtures required for air conditioner installation.",
         "price":10,
         "categories":[ "plumbing"]
@@ -533,7 +533,7 @@
     {
         "sku":"IH24567",
         "name":"Fan control parts",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Replacement parts for the forced air fans in our HVAC units and cooling fan for compressors.",
         "price":60,
         "categories":[ "machinery"]
@@ -541,7 +541,7 @@
     {
         "sku":"IH43624",
         "name":"Industrial motor",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Replacement motor for our industrial HVAC compressor units.",
         "price":125,
         "categories":[ "machinery"]
@@ -549,7 +549,7 @@
     {
         "sku":"IH02144",
         "name":"Electrical control board",
-        "region":"en-us",
+        "region":["en-us"],
         "description":"Control board for our HVAC units. Can be used to replace damaged or malfunctioning control boards.",
         "price":925,
         "categories":[ "electric"]

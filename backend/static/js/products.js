@@ -12,6 +12,7 @@ function init() {
         inDescription:false,
         selectedItem:{},
         checkoutForm:false,
+        regionsList:["en-us","ko-kr"],
 
         async loadAll() {
             this.loadList();
@@ -35,6 +36,7 @@ function init() {
             this.listOfFacets = [];
             this.listOfFacets= await (await fetch('/api/listFacets')).json();
             this.selectedFacets = this.listOfFacets;
+            this.selectedFacets.push("en-us", "ko-kr");
         },
 
         async searchThoseProducts() {
