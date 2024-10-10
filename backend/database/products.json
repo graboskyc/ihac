@@ -454,7 +454,7 @@
         "sku":"IH91234",
         "name":"Fancy Thermostat",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Our highest-end smart thermostat complete with Wi-Fi, Bluetooth, MQTT, LoRA, and 19 other protocols that make it a target for hackers and the NSA.",
         "price":100,
         "categories":["controls"]
     },
@@ -462,7 +462,7 @@
         "sku":"IH96666",
         "name":"Basic Thermostat",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Digital control thermostat with timers and a few other features that make it a good choice for the average homeowner.",
         "price":80,
         "categories":["controls"]
     },
@@ -470,7 +470,7 @@
         "sku":"IH765422",
         "name":"Environmental Control Unit",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Thermostat and control unit for large scale commercial buildings. Can support up to 1000 zones and 10,000 sensors.",
         "price":150,
         "categories":["controls"]
     },
@@ -478,7 +478,7 @@
         "sku":"IH47962",
         "name":"Round Thermostat",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Its a thermostat. But round. And it has a dial. And it's round.",
         "price":80,
         "categories":["controls"]
     },
@@ -486,7 +486,7 @@
         "sku":"IH92235",
         "name":"Big Heater",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Forced air HVAC unit for large spaces. It has all the BTUs and all the power.",
         "price":10000,
         "categories":["hvac"]
     },
@@ -494,7 +494,7 @@
         "sku":"IH84239",
         "name":"Little Heater",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Forced air HVAC unit for smaller homes.",
         "price":5000,
         "categories":["hvac"]
     },
@@ -502,7 +502,7 @@
         "sku":"IH75621",
         "name":"Medium Furnace",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"The Goldilocks of HVAC units. Not too big, not too small, just right. Forced air furnace for medium sized homes.",
         "price":7500,
         "categories":["hvac"]
     },
@@ -510,7 +510,7 @@
         "sku":"IH64237",
         "name":"Haunted Air Conditioner",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"This one is on discount because it's haunted. It's always cold, but it's always cold. And it's always cold.",
         "price":3500,
         "categories":["hvac"]
     },
@@ -518,7 +518,7 @@
         "sku":"IH756943",
         "name":"Furnace plumbing parts",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Assorted plumbing fittings and fixtures required for furnace installation.",
         "price":10,
         "categories":[ "plumbing"]
     },
@@ -526,7 +526,7 @@
         "sku":"IH54239",
         "name":"Air conditioner plumbing parts",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Assorted plumbing fittings and fixtures required for air conditioner installation.",
         "price":10,
         "categories":[ "plumbing"]
     },
@@ -534,7 +534,7 @@
         "sku":"IH24567",
         "name":"Fan control parts",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Replacement parts for the forced air fans in our HVAC units and cooling fan for compressors.",
         "price":60,
         "categories":[ "machinery"]
     },
@@ -542,7 +542,7 @@
         "sku":"IH43624",
         "name":"Industrial motor",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Replacement motor for our industrial HVAC compressor units.",
         "price":125,
         "categories":[ "machinery"]
     },
@@ -550,7 +550,7 @@
         "sku":"IH02144",
         "name":"Electrical control board",
         "region":"en-us",
-        "description":"foo bar baz",
+        "description":"Control board for our HVAC units. Can be used to replace damaged or malfunctioning control boards.",
         "price":925,
         "categories":[ "electric"]
     }
