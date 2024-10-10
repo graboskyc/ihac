@@ -74,7 +74,7 @@
                     <template x-for="p in listOfProducts">
                         <article class="productCard" data-theme="dark">
                             <header x-text="p.name"></header>
-                            <img :src="`/img/products/${p.sku}`"  />
+                            <img :src="`/img/products/${p.sku}.jpg`"  />
                             <p x-text="p.decription"></p>
                             <footer style="text-align: center;">
                                 <button x-on:click="viewDescription(p)" style="width:100%" class="secondary">Product Details</button>
@@ -142,7 +142,7 @@
                     </header>
                     
                     <div class="grid">
-                        <img :src="`/img/products/${selectedItem.sku}`" height="512" width="512"  />
+                        <img :src="`/img/products/${selectedItem.sku}.jpg`" height="512" width="512"  />
                         <table>
                             <tr>
                                 <th x-text="selectedItem.name"></th>
