@@ -456,8 +456,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":100,
-        "categories":["controls"],
-        "pic":"10.jpg"
+        "categories":["controls"]
     },
     {
         "sku":"IH96666",
@@ -465,8 +464,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":80,
-        "categories":["controls"],
-        "pic":"07.jpg"
+        "categories":["controls"]
     },
     {
         "sku":"IH765422",
@@ -474,8 +472,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":150,
-        "categories":["controls"],
-        "pic":"08.jpg"
+        "categories":["controls"]
     },
     {
         "sku":"IH47962",
@@ -483,8 +480,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":80,
-        "categories":["controls"],
-        "pic":"09.jpg"
+        "categories":["controls"]
     },
     {
         "sku":"IH92235",
@@ -492,8 +488,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":10000,
-        "categories":["hvac"],
-        "pic":"01.jpg"
+        "categories":["hvac"]
     },
     {
         "sku":"IH84239",
@@ -501,8 +496,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":5000,
-        "categories":["hvac"],
-        "pic":"02.jpg"
+        "categories":["hvac"]
     },
     {
         "sku":"IH75621",
@@ -510,8 +504,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":7500,
-        "categories":["hvac"],
-        "pic":"03.jpg"
+        "categories":["hvac"]
     },
     {
         "sku":"IH64237",
@@ -519,8 +512,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":3500,
-        "categories":["hvac"],
-        "pic":"04.jpg"
+        "categories":["hvac"]
     },
     {
         "sku":"IH756943",
@@ -528,8 +520,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":10,
-        "categories":[ "plumbing"],
-        "pic":"05.jpg"
+        "categories":[ "plumbing"]
     },
     {
         "sku":"IH54239",
@@ -537,8 +528,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":10,
-        "categories":[ "plumbing"],
-        "pic":"06.jpg"
+        "categories":[ "plumbing"]
     },
     {
         "sku":"IH24567",
@@ -546,8 +536,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":60,
-        "categories":[ "machinery"],
-        "pic":"11.jpg"
+        "categories":[ "machinery"]
     },
     {
         "sku":"IH43624",
@@ -555,8 +544,7 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":125,
-        "categories":[ "machinery"],
-        "pic":"13.jpg"
+        "categories":[ "machinery"]
     },
     {
         "sku":"IH02144",
@@ -564,7 +552,6 @@
         "region":"en-us",
         "description":"foo bar baz",
         "price":925,
-        "categories":[ "electric"],
-        "pic":"14.jpg"
+        "categories":[ "electric"]
     }
 ]
