@@ -57,4 +57,7 @@ async def listFacets():
 @api_app.get("/checkout")
 async def checkout():
     time.sleep(random.randint(9,17))
-    return True
+    retVal = {"success":True, "inStock":True}
+    if(random.randint(1,5) < 3):
+        retVal["inStock"] = False
+    return retVal

@@ -146,6 +146,10 @@
                         <h1>Loading checkout has failed</h1>
                         <p>:(</p>
                     </div>
+                    <div x-show="inCheckout && somethingSoldOut">
+                        <h1>Sorry we just validated your cart and it seems something is out of stock. Please remove it and try again.</h1>
+                        <p>:(</p>
+                    </div>
                 </article>
             </dialog>
 

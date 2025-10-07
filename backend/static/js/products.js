@@ -13,6 +13,7 @@ function init() {
         selectedItem:{},
         checkoutForm:false,
         regionsList:["en-us","ko-kr"],
+        somethingSoldOut:false,
 
         async loadAll() {
             this.loadList();
@@ -81,9 +82,17 @@ function init() {
             this.inDescription = false;
         },
 
-        async openCheckout() {            
+        async openCheckout() {
             this.inCheckout = true;
-            this.checkoutForm= await (await fetch('/api/checkout')).json();
+            this.checkoutForm = false;
+            this.somethingSoldOut = false;
+        },
+
+        async tryCheckout() {            
+            this.inCheckout = true;
+            var result = await (await fetch('/api/checkout')).json();
+            this.checkoutForm = result["success"];
+            this.somethingSoldOut = !result["inStock"];
         },
 
         async delFromCart(p) {
