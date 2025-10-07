@@ -58,6 +58,6 @@ async def listFacets():
 async def checkout():
     time.sleep(random.randint(9,17))
     retVal = {"success":True, "inStock":True}
-    if(random.randint(1,5) < 3):
+    if(random.randint(1,5) < 4):
         retVal["inStock"] = False
     return retVal
