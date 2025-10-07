@@ -137,16 +137,16 @@
                                 <td colspan="3" style="text-align: center;">No products in cart</td>
                         </tbody>
                     </table>
-                    <button x-show="!inCheckout && cart.length > 0" x-on:click="openCheckout()" style="float: right;">Checkout</button>
+                    <button x-show="!inCheckout && cart.length > 0" x-on:click="tryCheckout()" style="float: right;">Checkout</button>
                     <div x-show="inCheckout && !checkoutForm">
                         <h1>Loading checkout...</h1>
                         <progress></progress>
                     </div>
-                    <div x-show="inCheckout && checkoutForm">
+                    <div x-show="inCheckout && checkoutForm && !somethingSoldOut">
                         <h1>Loading checkout has failed</h1>
                         <p>:(</p>
                     </div>
-                    <div x-show="inCheckout && somethingSoldOut">
+                    <div x-show="inCheckout && checkoutForm && somethingSoldOut">
                         <h1>Sorry we just validated your cart and it seems something is out of stock. Please remove it and try again.</h1>
                         <p>:(</p>
                     </div>

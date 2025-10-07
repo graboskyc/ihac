@@ -88,9 +88,12 @@ function init() {
             this.somethingSoldOut = false;
         },
 
-        async tryCheckout() {            
+        async tryCheckout() {
             this.inCheckout = true;
+            this.checkoutForm = false;
+            this.somethingSoldOut = false;
             var result = await (await fetch('/api/checkout')).json();
+            console.log(result);
             this.checkoutForm = result["success"];
             this.somethingSoldOut = !result["inStock"];
         },
