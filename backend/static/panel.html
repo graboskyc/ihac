@@ -39,51 +39,75 @@
             </article>
 
             <article class="mainCtr">
-                <h1>Meeting format</h1>
-                <ul>
-                    <li>Background - 15 mins</li>
-                    <li>role play 60 mins (he will assign)</li>
-                    <li>feedback - 5-10 mins</li>
-                    <li>3 things - remaining time</li>
-                </ul>
+                <article>
+                    <header><h3>Meeting format</h3></header>
+                    <ul>
+                        <li>Background - 15 mins</li>
+                        <li>role play 60 mins (he will assign)</li>
+                        <li>feedback - 5-10 mins</li>
+                        <li>3 things - remaining time</li>
+                    </ul>
+                </article>
 
-                <h1>Info shared with candidate</h1>
-                <ul>
-                    <li>We serve 200M users world wide (direct customers, companies, and contractors) with 10M transactions per day.</li>
-                    <li>US sales making up 40%, EU sales at 40%, South America and LATAM at 10% and APAC at 10%</li>
-                    <li>IHAC started a project to build the new catalog and the new fulfillment system.</li>
-                    <li>They are choosing the Data Storage Technology and MongoDB is on the developers short list.</li>
-                    <li>CTO has announced that the project will be a Cloud Solutions based</li>
-                    <li>We represent the roles assigned by the candidate which should be including the Product Management / Product Owners / Architect</li>
-                    <li>If this is a Search Interview:
-                        <ul>
-                            <li>Also need a search solution so that customers can find what they are looking for</li>
-                            <li>Want to "introduce AI"</li>
-                        </ul>
-                    </li>
-                    <li>If this is an ASP Interview:
-                        <ul>
-                            <li>Also want to introduce real time data movement for order processing, connecting to upstream/downstream Kafka, and “introduce AI”</li>
-                        </ul>
-                    </li>
-                </ul>
+                <article>
+                    <header><h3>Info shared with candidate</h3></header>
+                    <ul>
+                        <li>We serve 200M users world wide (direct customers, companies, and contractors) with 10M transactions per day.</li>
+                        <li>US sales making up 40%, EU sales at 40%, South America and LATAM at 10% and APAC at 10%</li>
+                        <li>IHAC started a project to build the new catalog and the new fulfillment system.</li>
+                        <li>They are choosing the Data Storage Technology and MongoDB is on the developers short list.</li>
+                        <li>CTO has announced that the project will be a Cloud Solutions based</li>
+                        <li>We represent the roles assigned by the candidate which should be including the Product Management / Product Owners / Architect</li>
+                        <li>If this is a Search Interview:
+                            <ul>
+                                <li>Also need a search solution so that customers can find what they are looking for</li>
+                                <li>Want to "introduce AI"</li>
+                            </ul>
+                        </li>
+                        <li>If this is an ASP Interview:
+                            <ul>
+                                <li>Also want to introduce real time data movement for order processing, connecting to upstream/downstream Kafka, and “introduce AI”</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
 
-                <h1>Uniform information candidate does not know yet:</h1>                
-                <ul>
-                    <li>Transactions are direct orders as well as order updates (shipping, payment processing, invetory updates, etc)</li>
-                    <li>Our goal this year is expanding in the APAC market</li>
-                    <li>We are a Python shop and some things also done in C#</li>
-                    <li>We deploy on AWS today</li>
-                    <li>On Microsoft SQL today</li>
-                    <li>We need search. We don't have it today but think we achieve it by using SQL %LIKE% statements</li>
-                    <li>Our CIO saw in a magazine that if we don't introduce AI to our online shop, we will go out of business. But we do not know where to start or if it is a fad (like is anyone doing this for real?)</li>
-                    <li>We batch processes orders once a morning (doing yesterday's orders, or on Monday we do Fri and the weekend). This leads us to be slow on triaging orders (especially on Mondays) and we may find things are out of stock</li>
-                    <li>One group of the company uses Kafka to send payment data from the ecommerce side to the CRM side. We host this connector manually today.</li>
-                    <li>Could like to get more real time insights and recommendations for our customers as well as archive some old stuff</li>
-                    <li>Our site is slow... just try it out</li>
-                    <li>We scale up before holiday time every year to handle the load. We can only scale up, cannot shard/horizontally scale</li>
-                    <li>We didn't tell the customer to go to this website, but the link was in the prep materials</li>
-                </ul>
+                <article>
+                    <header><h3>Information candidate does not know yet and should discover from the panel:</h3></header>
+                    <ul>
+                        <li>Transactions are direct orders as well as order updates (shipping, payment processing, inventory updates, etc)</li>
+                        <li>Our goal this year is expanding in the APAC market</li>
+                        <li>Our CIO saw in a magazine that if we don't introduce AI to our online shop, we will go out of business. But we do not know where to start or if it is a fad (like is anyone doing this for real?)</li>
+                        <li>Our site is slow... just try it out</li>
+                        <li>We scale up before holiday time every year to handle the load. We can only scale up, cannot shard/horizontally scale</li>
+                        <li>We didn't tell the Candidate to go to this website, but the link was in the prep materials</li>
+
+                        <li>Tech Stack:
+                            <ul>
+                                <li>We are a Python shop and some things also done in C#</li>
+                                <li>We deploy on AWS today</li>
+                                <li>On Microsoft SQL today</li>
+                                <li>Security conscious so want to use private networking</li>
+                            </ul>
+                        </li>
+                        <li>For ASP Interviews:
+                            <ul>
+                                <li>We batch processes orders once a morning (doing yesterday's orders, or on Monday we do Fri and the weekend). This leads us to be slow on triaging orders (especially on Mondays) and we may find things are out of stock</li>
+                                <li>Sending shipping notifications and more is a manual process</li>
+                                <li>One group of the company uses Kafka to send payment data from the ecommerce side to the CRM side. We host this connector manually today.</li>
+                                <li>Would like to get more real time insights and dashboards</li>
+                                <li>Some items on our site commonly require additional things to purchase along with it (connectors, tools, etc) so adding a recommendation engine is desireable</li>
+                            </ul>
+                        </li>
+                        <li>For Search Interviews:
+                            <ul>
+                                <li>We do not have a search engine today. We "achieve" it by using SQL %LIKE% statements</li>
+                                <li>Some items on our site commonly require additional things to purchase along with it (connectors, tools, etc) so adding a recommendation engine is desireable</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            
             </article>
 
         </div>
