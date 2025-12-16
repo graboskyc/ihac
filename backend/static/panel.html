@@ -69,6 +69,11 @@
                                 <li>Also want to introduce real time data movement for order processing, connecting to upstream/downstream Kafka, and “introduce AI”</li>
                             </ul>
                         </li>
+                        <li>If this is a Performance Interview:
+                            <ul>
+                                <li>An engineer took a look at MongoDB and got bad results and admit they do not know MongoDB well so want to learn about its architecture, why it's performant, and discuss why they got bad POC results </li>
+                            </ul>
+                        </li>
                     </ul>
                 </article>
 
@@ -103,6 +108,16 @@
                             <ul>
                                 <li>We do not have a search engine today. We "achieve" it by using SQL %LIKE% statements</li>
                                 <li>Some items on our site commonly require additional things to purchase along with it (connectors, tools, etc) so adding a recommendation engine is desireable</li>
+                            </ul>
+                        </li>
+                        <li>For Performance Interviews:
+                            <ul>
+                                <li>We do not have a search engine today. We "achieve" it by using SQL %LIKE% statements</li>
+                                <li>Some items on our site commonly require additional things to purchase along with it (connectors, tools, etc) so adding a recommendation engine is desireable</li>
+                                <li>Our performance testing used Locust. It did not coorelate any DB metrics with Datadog, Grafana, etc</li>
+                                <li>We can not guarantee that the test harness was not the bottle neck in the testing versus the DB</li>
+                                <li>Our test harness was in US EAST 1 but the DB was in APAC as that is where our lab is located</li>
+                                <li>We took the data model directly from our SQL Server so it will contain lots of $lookup</li>
                             </ul>
                         </li>
                     </ul>
